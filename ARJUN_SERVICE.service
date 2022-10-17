@@ -1,0 +1,13 @@
+[Unit]
+Description=ComputerVisionMidterm
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/bin/bash -c 'python3 -u /home/ultraviolet/Downloads/arjun_midterm/arjun_midterm.py'
+User=ultraviolet
+WorkingDirectory=/home/ultraviolet/Downloads/arjun_midterm
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
